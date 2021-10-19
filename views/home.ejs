@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head.ejs'); %>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="container my-5">
+      <h2>Welcome,</h2>
+    </div>
+
+    <button
+      type="button"
+      class="btn btn-success btn-floating"
+      id="changePasswordBtn"
+      style="
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        margin: 0;
+        padding: 5px 20px;
+      "
+    >
+      <i class="fas fa-user px-1"></i> Change Password
+    </button>
+    <button
+      type="button"
+      id="logoutBtn"
+      class="btn btn-danger btn-floating"
+      style="
+        position: absolute;
+        bottom: 50px;
+        right: 5px;
+        margin: 0;
+        padding: 5px 20px;
+      "
+    >
+      <i class="fas fa-long-arrow-alt-left"></i> Logout
+    </button>
+
+    <script src="/js/home.js"></script>
+  </body>
+</html>
